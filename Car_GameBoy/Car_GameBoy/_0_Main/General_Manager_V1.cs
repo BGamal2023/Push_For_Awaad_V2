@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Threading;
@@ -25,18 +26,18 @@ namespace Car_GameBoy._0_Main
     internal class General_Manager_V1
     {
        
-        private Canvas gameArea = new Canvas();
         private Moving_Manager obj_Moving_Manager=new Moving_Manager();
         private level obj_Level=new level();
         //------------------------------------------------------------------------------------------------
-        public void start_And_Handle_The_App(MainWindow mW)
+        public Canvas start_And_Handle_The_App(MainWindow mW,Label gameOver_Label)
         {
-            obj_Level.start_The_Level(mW, gameArea);
+           Canvas gameArea= obj_Level.start_The_Level(mW,gameOver_Label);
+            return gameArea;
         }
        
        
         //------------------------------------------------------------------------------------------------
-        public void onclick_Keydown(object sender, KeyEventArgs e)
+        public void onclick_Keydown(object sender, KeyEventArgs e,Canvas gameArea)
         {
             if (e.Key == Key.Right)
             {
@@ -48,12 +49,10 @@ namespace Car_GameBoy._0_Main
                 obj_Moving_Manager.move_The_Player_Left(gameArea);
 
             }
+           
         }
         //------------------------------------------------------------------------------------------------
-        internal void onClick_Keyup(object sender, KeyEventArgs e)
-        {
-
-        }
+       
      
     }
 }

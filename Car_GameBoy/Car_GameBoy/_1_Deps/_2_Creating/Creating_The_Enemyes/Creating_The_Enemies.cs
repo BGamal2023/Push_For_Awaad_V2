@@ -42,9 +42,6 @@ namespace Car_GameBoy._1_Deps._2_Creating.Creating_The_Enemyes
         private int generate_Randome_X_Pos_For_Enemey()
         {
             Random random = new Random();
-
-
-
             // Generate a random integer between 5 (inclusive) and 15 (exclusive)
             int randomNumberInRange =
                 random.Next(Globals.racing_Area_X_Pos + Globals.enemy_One_Block_Width, Globals.right_Sideway_Blocks_X_Pos - 2 * Globals.enemy_One_Block_Width);
@@ -55,16 +52,11 @@ namespace Car_GameBoy._1_Deps._2_Creating.Creating_The_Enemyes
         private int generate_Randome_Num_For_Enemy_Color()
         {
             Random random = new Random();
-
-
-
             // Generate a random integer between 5 (inclusive) and 15 (exclusive)
             int randomNumberInRange =
                 random.Next(0, Globals.li_Car_Colors.Count);
 
             return randomNumberInRange;
         }
-
-
     }
 }

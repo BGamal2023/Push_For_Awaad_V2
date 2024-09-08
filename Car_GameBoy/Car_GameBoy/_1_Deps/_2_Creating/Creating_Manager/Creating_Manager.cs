@@ -37,7 +37,7 @@ namespace Car_GameBoy._1_Deps._2_Creating.Creating_Manager
         //--------------------------------------------------------------------------------------
         public void creat()
         {
-            Creating_The_List_Of_Brush_Colors.GenerateDistinctBrushes(300);
+            Creating_The_List_Of_Brush_Colors.GenerateDistinctBrushes(50);
             obj_Score_Box_Creator.create_Score_Box();
             obj_Hi_Score_Box_Creator.create_Hi_Score_Box();
             obj_Fuel_Indic_Creator.create_Fuel_Indicator_Box();
@@ -53,6 +53,14 @@ namespace Car_GameBoy._1_Deps._2_Creating.Creating_Manager
             obj_Player_Food_Creator.create_The_Player_Food();   
 
         }
-        
+        //--------------------------------------------------------------------------------------
+        public void creat_After_GameOver()
+        {
+            obj_Creating_Player_Container.creat_Player_Container();
+            obj_Creating_The_Player.create_The_Player();
+            obj_Creating_Enemyies.creating_The_Enemies();
+            obj_Player_Food_Creator.create_The_Player_Food();
+        }
+
     }
 }

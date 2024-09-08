@@ -50,5 +50,11 @@ namespace Car_GameBoy._1_Deps._3_Drawing.Drawing_Manager
 
 
         }
+        public void draw_After_GameOver(Canvas gameArea)
+        {
+            obj_Drawing_Player_Container.draw_The_Player_Conatiner(gameArea);
+            obj_Drawing_Player.draw_The_Player(gameArea);
+            obj_Drawing_Enemyies.draw_The_Enemies(gameArea);
+        }
     }
 }

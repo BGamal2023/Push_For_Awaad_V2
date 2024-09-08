@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Car_GameBoy"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="Parent_Container">
 
     </Grid>
 </Window>
