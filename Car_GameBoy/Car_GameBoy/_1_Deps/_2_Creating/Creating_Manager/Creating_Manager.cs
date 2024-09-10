@@ -61,6 +61,20 @@ namespace Car_GameBoy._1_Deps._2_Creating.Creating_Manager
             obj_Creating_Enemyies.creating_The_Enemies();
             obj_Player_Food_Creator.create_The_Player_Food();
         }
+        //--------------------------------------------------------------------------------------
+        public void creat_Befor_Starting_New_Level()
+        {
+            obj_Creating_The_Racing_Area.creat_The_Racing_Area();
+            obj_Creating_Line_In_Racing_Area.create_Lines_Of_Racing_Area();
+            obj_Creating_The_Two_Sideways_Of_The_Racing_Area.create_The_Left_Sideway_Of_The_Racing_Area();
+            obj_Creating_The_Two_Sideways_Of_The_Racing_Area.create_The_Right_Sideway_Of_The_Racing_Area();
+            obj_Creating_Left_Sideway_Blocks.create_Left_Sideway_Blocks();
+            obj_Creating_Right_sideway_Blocks.create_Right_Sideway_Blocks();
+            obj_Creating_Player_Container.creat_Player_Container();
+            obj_Creating_The_Player.create_The_Player();
+            obj_Creating_Enemyies.creating_The_Enemies();
+            obj_Player_Food_Creator.create_The_Player_Food();
+        }
 
     }
 }

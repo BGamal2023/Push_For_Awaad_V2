@@ -96,9 +96,6 @@ namespace Car_GameBoy._1_Deps._7_Controlling.Controlling_Info_Tickets_Bet_Levels
             Canvas.SetTop(canvas, gameArea.Height / 2 - canvas.Height / 2);
             Canvas.SetLeft(canvas, gameArea.Width / 2 - canvas.Width / 2);
             Canvas.SetZIndex(canvas, 100);
-
-
-
             // Create a timer to remove the canvas after 5 seconds
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(show_Time_In_Second);
@@ -106,10 +103,8 @@ namespace Car_GameBoy._1_Deps._7_Controlling.Controlling_Info_Tickets_Bet_Levels
             {
                 gameArea.Children.Remove(canvas);
 
-                ///bug #20 remove this commit if you log in the levels
-              //  Globals.does_Level_Started = true;
-               // Globals.does_Level_Started = true;
             };
+
             timer.Start();
         }
 

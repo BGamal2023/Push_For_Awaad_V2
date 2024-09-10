@@ -56,5 +56,19 @@ namespace Car_GameBoy._1_Deps._3_Drawing.Drawing_Manager
             obj_Drawing_Player.draw_The_Player(gameArea);
             obj_Drawing_Enemyies.draw_The_Enemies(gameArea);
         }
+       public void draw_Before_Starting_New_Level(Canvas gameArea)
+        {
+            obj_Drawing_Racing_Area.draw_The_Racing_Area(gameArea);
+            obj_D_Bkg_Lines.draw_The_Bkground_Lines_In_The_Racing_Area(gameArea);
+            obj_Drawing_Sideways_Of_The_Racing_Area.draw_The_Left_Sideway(gameArea);
+            obj_Drawing_Sideways_Of_The_Racing_Area.draw_The_Right_Sideway(gameArea);
+            obj_D_S_W_B.draw_Left_Sideway_Blocks(gameArea);
+            obj_D_S_W_B.draw_Right_Sideway_Blocks(gameArea);
+            obj_Drawing_Player_Container.draw_The_Player_Conatiner(gameArea);
+            obj_Drawing_Player.draw_The_Player(gameArea);
+            obj_Drawing_Enemyies.draw_The_Enemies(gameArea);
+
+
+        }
     }
 }
