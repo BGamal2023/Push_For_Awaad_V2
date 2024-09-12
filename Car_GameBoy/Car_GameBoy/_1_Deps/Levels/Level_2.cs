@@ -16,16 +16,18 @@ namespace Car_GameBoy._1_Deps.Levels
         {
             //-----------
             ///MainWidow
-            
+
             /// GameArea
             Globals.gameArea_Bkground_Color = Brushes.Yellow;
             //-----------
-            Globals.timerTick = 400;
+            Globals.timerTick = 200;
             //-----------
             /// Racing Area
             Globals.racing_Area_bGround_Color = Brushes.Gray;
             /// Racing Area Bkg Lines
-            Globals.moving_Increment = 50;
+            Globals.moving_Increment = 20;
+            Globals.racing_Area_Background_Line_Color = Brushes.Yellow;
+
             //------------------------------------
             /// Blocks  in sideway of racing area
             Globals.right_Sideway_Blocks_Height = 60;
@@ -35,15 +37,17 @@ namespace Car_GameBoy._1_Deps.Levels
             Globals.no_Of_Left_SideWay_Blocks = 7;
             //-------------------------------------------------
             /// player container 
-            Score_Box_Creator.obj_TextBlock.Text = 0.ToString();
-            Globals.player_Continer_Color= Brushes.Gray;    
+            Score_Box_Creator.obj_TextBox.Text = 0.ToString();
+            Globals.player_Continer_Color = Brushes.Black;
             //-------------------------------------------------
             ///Enemyies
             Globals.number_Of_Enemies = 4;
-            Globals.vertical_Dis_Bet_Enemies = 300;
+            Globals.vertical_Dis_Bet_Enemies = 100;
+            Globals.enemy_Move_Speed = 20;
+
             //--------------------------------------------------------------
             /// Levels
-            Globals.level_Score = 500;
+            Globals.level_Score = 100;
 
 
 

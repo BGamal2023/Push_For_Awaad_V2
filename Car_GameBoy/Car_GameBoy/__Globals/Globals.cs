@@ -48,7 +48,7 @@ namespace Car_GameBoy.__Globals
         public static int no_Of_Lines_In_racing_Area = 3;
         public static int racing_Area_Bkground_Line_Segment_Height = 1;
         public static int no_Of_Segement_In_Every_Racing_Area_Lines = racing_Area_Background_Line_Height / racing_Area_Bkground_Line_Segment_Height;
-        public static int moving_Increment = 50;
+        public static int moving_Increment = 60;
         public static List<C_Item> li_Lines_In_Racing_Area_New = new List<C_Item>();
         //------------------------------------
         /// 2 sides of the Racing Area 

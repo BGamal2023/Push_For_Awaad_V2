@@ -117,6 +117,7 @@ namespace Car_GameBoy._1_Deps._4_Moving.Interfaces_And_Thier_Implem_Classes
                 if (list[i].top_Pos >= limit_Value)
                 {
                     list[i].top_Pos = list[i].top_Pos - limit_Value;
+
                 }
             }
         }
@@ -136,9 +137,6 @@ namespace Car_GameBoy._1_Deps._4_Moving.Interfaces_And_Thier_Implem_Classes
 
             }
         }
-
-     
-
     public void move_Item_Horizontal_Left(List<C_Item> list, Canvas gameArea, int increment_Value, int limit_Value)
         {
            

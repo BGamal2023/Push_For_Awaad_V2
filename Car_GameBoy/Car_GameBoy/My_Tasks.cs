@@ -9,9 +9,9 @@ namespace Car_GameBoy
 {
     internal class My_Tasks
     {
-        /// congratulation block
+        // congratulation block
         /// arrange enemy positions
-        /// merge the branch with main
+        // merge the branch with main
         /// why side blocks not move
         /// score value must be zero
         /// congratulation message next level no not correct

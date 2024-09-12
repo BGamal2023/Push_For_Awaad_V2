@@ -16,7 +16,7 @@ namespace Car_GameBoy._1_Deps._3_Drawing.Drawing_Player
         //-------------------------------------------------------------------------------------------
         public void draw_The_Player_Conatiner(Canvas gameArea)
         {
-            obj_Drawing.draw_Item(Globals.li_Player_Container,gameArea);
+            obj_Drawing.draw_Item(Globals.li_Player_Container,gameArea,9);
         }
     }
 }
